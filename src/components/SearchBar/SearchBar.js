@@ -1,8 +1,13 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import './SearchBar.css';
+import "./SearchBar.css";
 
 function SearchBar(props) {
-  return <div></div>;
+  return (
+    <div className="SearchBar">
+      <input placeholder="Enter a song, Album, or Artist" />
+      <button className="SearchButton">SEARCH</button>
+    </div>
+  );
 }
 
 export default SearchBar;
