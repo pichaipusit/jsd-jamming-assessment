@@ -17,7 +17,17 @@ function SearchBar({ onSearch }) {
         placeholder="Enter a song, Album, or Artist"
         onChange={handleTermChange}
       />
-      <button className="SearchButton" onClick={search}>
+      <button
+        style={{
+          borderRadius: "10px",
+          outline: "none",
+          padding: "8px",
+          background: "linear-gradient(purple, pink)",
+          color: "white",
+        }}
+        className="SearchButton"
+        onClick={search}
+      >
         SEARCH
       </button>
     </div>
