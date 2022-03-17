@@ -3,8 +3,8 @@ import "./Track.css";
 function Track(props) {
   const { name, artist, album } = props.track;
 
-  const renderAction = () => {
-    if (props.isRemoval) {
+  const displayButton = () => {
+    if (props.isRemoved) {
       return (
         <button className="" onClick={removeTrack}>
           -
@@ -33,7 +33,7 @@ function Track(props) {
           {artist} | {album}
         </p>
       </div>
-      {renderAction()}
+      {displayButton()}
     </div>
   );
 }

@@ -11,7 +11,7 @@ function Playlist({ playlistTracks, onRemoved, onNameChange, onSave }) {
       <TrackList
         tracks={playlistTracks}
         onRemoved={onRemoved}
-        isRemoval={true}
+        isRemoved={true}
       />
       <button className="Playlist-save" onClick={onSave}>
         SAVE TO SPOTIFY

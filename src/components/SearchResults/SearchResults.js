@@ -5,7 +5,7 @@ function SearchResults({ searchResults, onAdd }) {
   return (
     <div className="SearchResults">
       <h1>Results</h1>
-      <TrackList tracks={searchResults} onAdd={onAdd} isRemoval={false} />
+      <TrackList tracks={searchResults} onAdd={onAdd} isRemoved={false} />
     </div>
   );
 }
